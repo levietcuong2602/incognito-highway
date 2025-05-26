@@ -33,7 +33,7 @@ func GetProxyConfig() (*ProxyConfig, error) {
 	// get config from process
 	proxyPort := flag.Int("proxy_port", 7337, "port for communication with other node (optional, default 7337)")
 	bootnodePort := flag.Int("bootnode_port", 9330, "rpc port, returns list of known highway (optional, default 9330)")
-	adminPort := flag.Int("admin_port", 8080, "rest api /websocket port for administration, monitoring (optional, default 8080)")
+	adminPort := flag.Int("admin_port", 9080, "rest api /websocket port for administration, monitoring (optional, default 9080)")
 	isProfiling := flag.Bool("profiling", true, "enable profiling through admin port")
 	supportShards := flag.String("support_shards", "all", "shard list that this proxy will work for (optional, default \"all\")")
 	privateSeed := flag.String("privateseed", "", "private seed of this proxy, use  for authentication with other node")
